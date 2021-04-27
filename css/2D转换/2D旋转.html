@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+           
+            border-radius: 50%;
+            border: 5px solid skyblue;
+            /* 过渡需要给自身加 */
+            transition: all 0.3s;
+            /* 改变旋转角度 */
+            /* 默认是50% 50%等价于 center center */
+            transform-origin: left bottom;
+            /* 可以是px */
+            /* transform-origin: 50px 50px; */
+        }
+        img:hover {
+             /* 旋转45度 */
+             transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="123.png" alt="">
+</body>
+</html>

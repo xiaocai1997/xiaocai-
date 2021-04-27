@@ -1,0 +1,59 @@
+body {
+    max-width: 540px;
+    /* 移动端最小宽度基本上都是320 */
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei";
+    color: #000;
+    background: #f2f2f2;
+    /* 永远不会出现水平滚动条 */
+    overflow-x: hidden;
+    /* 防止有些元素点击会高亮 */
+    -webkit-tap-highlight-color: transparent;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 搜索模块 */
+.search-top {
+    display: flex;
+    max-width: 540px;
+    min-width: 320px;
+    /* 固定定位 固定定位不可以再加margin值*/
+    position: fixed;
+    top: 0;
+    /* 水平居中对齐 */
+    left: 50%;
+    transform: translateX(-50%);
+    /* 兼容老版本手机 */
+    -webkit-transform: translateX(-50%);
+    width: 100%;
+    height: 44px;
+    background-color: skyblue;
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    text-align: center;
+    color: #2eaae0;
+}
+
+.user::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprite.png) no-repeat -59px -194px;
+    background-size: 104px auto;
+    margin: 0 auto;
+}
+
+.search {
+    flex: 1;
+}

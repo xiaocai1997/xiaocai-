@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 子盒子是绝对定位的话，父盒子要用相对定位
+    1.子盒子绝对定位，不会占有位置，可以放到父盒子的任何地方
+不会影响其他的兄弟盒子
+2.父盒子需要加定位限制子盒子在父盒子内的显示
+3.父盒子布局时，需要占有位置，因此父盒子只能是相对定位
+总结：父亲需要占有位置，因此是相对定位，子盒子不需要占有位置，则是绝对定位 -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

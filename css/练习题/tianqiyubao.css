@@ -1,0 +1,46 @@
+body {
+    font-family: Microsoft YaHei;
+}
+
+h2 {
+    /* 居中 */
+    text-align: center;
+    /* 字体大小 */
+    font-size: 50px;
+}
+
+.daohang {
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+}
+
+a {
+    /* 超链接去掉下划线 */
+    text-decoration: none;
+}
+
+p {
+    /* 首行缩进 */
+    text-indent: 2em;
+    /* 行间距 */
+    line-height: 26px;
+    font-size: 20px;
+}
+
+.picture {
+    text-align: center;
+}
+
+.wendu {
+    font-weight: 700;
+}
+
+.mingri {
+    font-weight: 700;
+}
+
+.laiyuan{
+    color: gray;
+    font-size: 15px;
+}

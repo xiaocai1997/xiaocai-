@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            margin: 100px auto;
+            /* 第一个10px表示y轴的阴影程度 第二个是x轴的 第三个模糊距离 第四个是阴影尺寸  rgba半透明效果
+            默认的是外阴影outside（outside不允许单独写）inside内阴影 */
+            /* box-shadow: 10px 10px 10px 10px rgba(0,0,0, .3); */
+        }
+        /* 通常样式用于鼠标经过时 */
+        div:hover {
+            box-shadow: 10px 10px 10px 10px rgba(0,0,0, .3);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

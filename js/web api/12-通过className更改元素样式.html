@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            width: 200px;
+            height: 300px;
+            background-color: pink;
+        }
+        .change {
+            width: 200px;
+            height: 300px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="first"></div>
+    <script>
+        var text = document.querySelector('div');
+        text.onclick = function() {
+            // 我们可以通过 修改元素的classname 更改元素的样式
+            // this.className = 'change'
+            // 如果想要保留原先的类名，我们可以这么做
+            this.className = 'first change'
+        }
+    </script>
+</body>
+</html>

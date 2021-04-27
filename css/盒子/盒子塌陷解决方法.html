@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .father {
+        width: 500px;
+        height: 500px;
+        background-color: blueviolet;
+        /* 若想将父盒子和子盒子分开,方法有3种
+        1.为父元素定义上边框 transparent表示透明的(会扩大盒子)*/
+        /* border-top: 1px solid transparent; */
+        /* 2.为父元素定义上内边距(会扩大盒子) */
+        /* padding-top: 1px; */
+        /* 3.为父元素添加overflow:hidden */
+        /* overflow: hidden; */
+    }
+    .son {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin-top: 20px;
+
+    }
+</style>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>删除</button>
+    <ul>
+        <li>1</li>
+        <li>3</li>
+        <li>5</li>
+    </ul>
+    <script>
+        // 1.获取元素
+        var ul = document.querySelector('ul');
+        var btn = document.querySelector('button');
+        // 2.删除元素 
+        // ul.removeChild(ul.children[0]);
+        btn.onclick = function () {
+            if (ul.children.length == 0) {
+                // 长度为0时,禁用此按钮功能
+                this.disabled = true;
+            } else {
+                ul.removeChild(ul.children[0]);
+            }
+        }
+    </script>
+</body>
+
+</html>

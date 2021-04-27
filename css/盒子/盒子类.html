@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 300px;
+        height: 200px;
+        /* 边框的粗细 */
+        /* border-width: 5px; */
+        /* 边框的样式  solid实线边框 dashed虚线边框 dotted点线边框*/
+        /* border-style: solid; */
+        /* 边框颜色  */
+        /* border-color: aqua; */
+        /* 边框的复合写法 */
+        border: 5px solid red;
+        /* (上边框) */
+        border-top: 1px solid pink;
+        /* border-bottom(下边框) */
+        /* border-left(左边框) */
+        /* border-right(右边框) */
+        /* 内边距-left表示内容与左边框的距离为5px  -right同理 -top同理 -bottom同理 */
+        padding-left: 5px;
+        /* padding复合写法（padding会影响盒子大小） */
+        /* 1个值，表示上下左右都是5像素的内边距 */
+        /* padding: 5px; */
+        /* 2个值，表示上下内边距是5像素，左右内边距是10像素 */
+        /* padding: 5px 10px; */
+        /* 3个值，表示上内边距是5像素，左右内边距是10像素 下内边距20像素 */
+        /* padding: 5px 10px 20px; */
+        /* 4个值，表示上5像素，右10像素，下20像素，左30像素（是根据顺时针的顺序） */
+        /* padding: 5px 10px 20px 30px; */
+        /* 外边距-left表示内容与左边框的距离为5px  -right同理 -top同理 -bottom同理 */
+        margin-left: 5px;
+        /* margin复合写法*/
+        /* 1个值，表示上下左右都是5像素的外边距 */
+        /* margin: 5px; */
+        /* 2个值，表示上下外边距是5像素，左右外边距是10像素 */
+        /* margin: 5px 10px; */
+        /* 3个值，表示上外边距是5像素，左右外边距是10像素 下内边距20像素 */
+        /* margin: 5px 10px 20px; */
+        /* 4个值，表示上5像素，右10像素，下20像素，左30像素（是根据顺时针的顺序） */
+        /* margin: 5px 10px 20px 30px; */
+        /* 块儿级盒子水平居中显示 */
+        /* margin: 0 auto; */
+        /* 将盒子里面的行内元素或者行内块元素居中显示只需要加text-align: center;即可,若想让行内元素和行内块元素实现对齐只需要给这2个元素的父级(也就是给这2个元素加个名字相同的class)
+        写上text-align: center;即可 */
+    }
+    * {
+        /* 清除内外边距 */
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <div>我是内容</div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        p {
+            width: 300px;
+            height: 30px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <button>获取当前时间</button>
+    <div>显示当前时间</div>
+    <p></p>
+    <script>
+        // 我们点击按钮，div里面的文字会发生变化
+        // 1.获取元素
+        var btn = document.querySelector('button');
+        var div = document.querySelector('div');
+        // 2.注册事件
+        btn.onclick = function () {
+            // innerText可以修改元素的内容
+            div.innerText = getDate();
+        }
+
+        function getDate() {
+            var date = new Date();
+            // console.log(date.getFullYear()); //返回当前日期的年 2019
+            // console.log(date.getMonth() + 1); //月份 返回的月份小一个月  记得月份要+1
+            // console.log(date.getDate()); //返回的是几号
+            // console.log(date.getDay()); // 周一返回1 周六返回6 但是周日返回的是 0
+            // 写一个2021 3月9日 星期二
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var dates = date.getDate();
+            var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+            var day = date.getDay();
+            return ('今天是' + year + '年' + month + '月' + dates + '日' + arr[day]);
+        }
+        // 我们元素可以不用添加事件
+        var p = document.querySelector('p');
+        p.innerText = getDate();
+    </script>
+</body>
+
+</html>

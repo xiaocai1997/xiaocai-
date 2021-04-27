@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="1.jpg" alt="">
+    <div id="sw"></div>
+    <script>
+        // 1.获取元素
+        var sw = document.getElementById('sw');
+        var img = document.querySelector('img');
+        // 2.获取时间
+        var date = new Date();
+        var h = date.getHours();
+        // 判断小时数改变图片
+        if (h < 12) {
+            img.src = '1.jpg';
+            sw.innerHTML = '上午好';
+        } else if (h < 18) {
+            img.src = 'ssw.jpg';
+            sw.innerHTML = '中午好';
+        } else {
+            img.src = 'ssw.jpg';
+            sw.innerHTML = '晚上好';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            height: 41px;
+            background-color: #fcfcfc;
+            border-top: 3px solid #ff8500;
+            border-bottom: 1px solid #edeef0;
+            /* 文字垂直居中 */
+            line-height: 41px;
+
+        }
+
+        .nav a {
+            padding: 0px 20px;
+            height: 41px;
+            /* 由于a是需要做成行内块的样式所以此处需要将a转换成行内块元素,行内块需要设置高度和宽度这样样式上比较合理 */
+            display: inline-block;
+            /* 去除下划线 */
+            text-decoration: none;
+            /* 文字颜色大小设置 */
+            font-size: 12px;
+            color: #4c4c4c;
+        }
+        .nav a:hover {
+            background-color: #ececec;
+            color: #ff8500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">设为首页</a>
+        <a href="#">手机新浪</a>
+        <a href="#">移动客户端</a>
+        <a href="#">登录</a>
+        <a href="#">微博</a>
+        <a href="#">网站导航</a>
+    </div>
+</body>
+
+</html>

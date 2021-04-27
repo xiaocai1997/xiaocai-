@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div {
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+    /* x就是x轴上移动位置 y就是y轴上移动位置 中间用逗号分割 */
+    /* transform: translate(x,y); */
+    /* transform: translate(100px,100px); */
+    /* 1.如果我们只移动X轴 */
+    /* transform: translate(100px,0); */
+    /* transform: translateX(100px); */
+}
+/* 第一个盒子移动不会影响第二个盒子位置用于hover的时候的样式可以压住盒子 */
+div:first-child {
+    transform: translate(100px,100px);
+}
+div:last-child {
+    background-color: slateblue;
+}
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a {
+        width: 150px;
+        height: 80px;
+        background-color: red;
+        /* 将行内元素(行内元素不能设置高宽)转换块元素 适用于链接比较小选起来要点字，这样直接点背景色就能选择 */
+        display: block;
+    }
+    div {
+        background-color: skyblue;
+        /* 将块元素转换为行内元素 */
+        display: inline;
+    }
+span {
+    width: 300px;
+    height: 100px;
+    background-color: slateblue;
+    /* 将行内元素转换为行内块元素 */
+    display: inline-block;
+}
+</style>
+<body>
+    <a href="#">行内元素</a>
+    <a href="#">行内元素</a>
+    <div>块元素</div>
+    <div>块元素</div>
+    <span>我是行内元素</span>
+    <span>我是行内元素</span>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 表单域是一个包含表单元素的区域 from可以把内容提交给服务器-->
+    <!-- form里面有action表示url地址，method用于提交表单数据,name表单名称  具体可以提交后看url-->
+    <!-- input输入表单元素 -->
+    <!-- type值
+        text文本框placeholder虚拟显示,maxlength最多输入
+    password密码框
+    radio单选按钮
+    checkbox定义复选框 可以多选，checked默认勾选
+    submit提交按钮，reset重置
+    button 搭配js使用
+    label标注标签 光标会定位选择框 label 加id才行
+    file上传文件
+ -->
+    <form action="xxx.php" method="GET">
+        <label for="username">用户名:</label> <input type="text" name="username" placeholder="请输入用户名" maxlength="6"
+            id="username"> <br>
+        密码:<input type="password" name="passworld"> <br>
+        <!-- name 是表单元素名字，这里性别单选按钮必须有相同name，才能实现多选一，name和vlue主要针对于后端 -->
+        性别:男<input type="radio" name="sex" value="男" checked> 女<input type="radio" name="sex" value="女"> <br>
+        爱好：吃饭<input type="checkbox" value="吃饭">睡觉<input type="checkbox" name="hobby" value="睡觉"> <br>
+        <input type="submit" value="免费注册">
+        <input type="reset"> <br>
+        <input type="button" value="获取短信验证码"> <br>
+        上传头像：<input type="file">
+
+
+
+
+
+        <!-- select下拉框 select里面要加option,想显示南京要在前面加selected="selected" -->
+        籍贯
+        <select name="jiguan" id="1">
+            <option value="北京">北京</option>
+            <option value="天津">天津</option>
+            <option value="南京" selected="selected">南京</option>
+        </select>
+        <br>
+        <!-- textarea文本域用于给用户填详细记录  clos表示一行可以写多少字 row显示多少行-->
+        网站介绍<textarea name="" id="" cols="30" rows="10" placeholder="请输入"></textarea>
+    </form>
+</body>
+
+</html>

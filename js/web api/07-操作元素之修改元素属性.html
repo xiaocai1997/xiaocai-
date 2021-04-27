@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="songyi">宋轶</button>
+    <button id="ssw">杀生丸</button> <br>
+    <img src="1.jpg" alt="" title="songyi">
+
+    <script>
+        // 修改元素属性 src
+        // 1.获取元素
+        var songyi = document.getElementById('songyi');
+        var ssw = document.getElementById('ssw');
+        var img = document.querySelector('img');
+        // 2.注册时间 处理程序
+        songyi.onclick = function () {
+            img.src = '1.jpg';
+            img.title='宋轶';
+        }
+        ssw.onclick = function () {
+            img.src = 'ssw.jpg';
+            img.title='ssw';
+        }
+    </script>
+</body>
+
+</html>

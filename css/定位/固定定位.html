@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .baidu {
+            /* 以浏览器可视窗口为参照移动元素
+            跟父元素没有任何关系
+            固定定位不占有原先位置 */
+            position: fixed;
+            /* 根据版心固定位置，先将图片固定到浏览器宽度的一般，然后根据取父盒子的宽度的一半，这样图片就能固定到版心右侧 */
+            left: 50%;
+            margin-left: 600px;
+        }
+        .banxin {
+            margin: 0px auto;
+            background-color: skyblue;
+            width: 1200px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 固定定位 -->
+    <div class="baidu">
+        <img src="baidu.png" alt="">
+    </div>
+    <div class="banxin">
+    </div>
+</body>
+</html>

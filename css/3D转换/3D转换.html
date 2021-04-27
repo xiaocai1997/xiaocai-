@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            transform: translateX(100px) translateY(100px) translateZ(100px);
+            /* translateZ(100px)向外移动（向我们的眼睛来移动） */
+            /* 复合写法 */
+            /* transform: translate3d(X,Y,Z); */
+            transform: translate3d(100px,100px,100px);
+            /* 5.xyz是不能省略的 如果没有就写0 */
+        }
+    </style>
+</head>
+<body>
+    <!-- x轴水平向右 X右边是正值 左边是负值 -->
+    <!-- y轴垂直向下 y下面是正值 上面是负值-->
+    <!-- z轴垂直屏幕 往外面是正值 往里面是负值-->
+    <div></div>
+</body>
+</html>

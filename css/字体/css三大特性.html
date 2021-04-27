@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        color: black;
+    }
+    /* css特性具有重叠性，若代码较多时，上面的颜色找不到了，可以在下面写一个颜色，css根据就近原则会选择最近的颜色 */
+    div {
+        color: pink;
+    }
+    /* 后代选择器会将ul中的权重继承过来所以li的权重比ul高，这是权重的继承性，也是优先级的概念 */
+    li {
+        color: pink;
+    }
+    ul li {
+        color: red;
+    }
+</style>
+<body>
+    <div>123hhh</div>
+    <ul>
+        <li>123</li>
+        <li>124</li>
+        <li>125</li>
+        <li>126</li>
+    </ul>
+</body>
+</html>

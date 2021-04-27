@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器的使用</title>
+    <style>
+        /* 类选择器，样式用·定义，结构class调用 多类名的好处是将2个div相同的部分放到一个类名里面这样在body里面直接调用类名就很方便*/
+        /* p {color: red;}标签选择器，将所有p标签的颜色改为红色     * {color： red} 将所有标签改为红色，所有标签~~~~ */
+        .box {
+            width: 300px;
+            height: 300px;
+            font-size: 30px;
+        }
+        .music {
+            
+            /* 背景颜色 */
+            background-color: red;
+        }
+        .green {
+           
+            background-color: seagreen;
+        }
+        /* id选择器具有唯一性，只能调用一次，搭配js使用 */
+        #abc {
+            color: sienna;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="music box">不能说的秘密</div>
+    <div class="green box">不能说的秘密</div>
+    <div class="music box">不能说的秘密</div>
+    <div id="abc">花海</div>
+</body>
+
+</html>

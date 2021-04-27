@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1. 前置递增运算符 ++写在变量的前面  递减-
+        var age = 10;
+        ++age; //类似于age = age + 1
+        console.log(age);
+
+        //3.
+        var p = 10;
+        console.log(++p + 10); //21
+
+        //4.后置递增运算符 ++写在变量后面
+        var num = 10;
+        num++; //num = num + 1
+        console.log(num);
+        //1. 前置自增和后置自增如果单独使用 效果一样
+        //2. 后置自增 先返回原值 后自加1
+        var age = 10;
+        console.log(age++ + 10);  // 20 因为age++会先参与运算然后再+1 age是10 + 10 = 20 然后算完了再+1这时候日志里面不会再+1了
+        console.log(age);  //11
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

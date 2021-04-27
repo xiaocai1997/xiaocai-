@@ -1,0 +1,331 @@
+/* 轮播图模块 */
+.main {
+    width: 100%;
+    height: 456px;
+    margin: 9px 0px;
+}
+
+.banner {
+    float: left;
+    width: 721px;
+    height: 456px;
+    background-image: url(../images/图层179.png);
+    margin-left: 220px;
+}
+
+/* 快报模块 */
+.news {
+    float: right;
+    width: 250px;
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.new_hd {
+    height: 33px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.new_hd h5 {
+    float: left;
+    line-height: 33px;
+    padding-left: 16px;
+}
+
+.new_hd a {
+    float: right;
+    line-height: 33px;
+    padding-right: 10px;
+}
+
+.new_hd a::after {
+    content: "\e743";
+    font-family: "iconfont";
+}
+
+.new_bd p {
+    padding-left: 16px;
+    padding-top: 7px;
+}
+
+/* 推荐模块 */
+.recommend {
+    float: right;
+    height: 210px;
+    width: 250px;
+    border: 1px solid #e4e4e4;
+    border-top: 0px;
+}
+
+.recommend ul li {
+    float: left;
+    width: 62px;
+    height: 70px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.recommend ul li i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 3px;
+}
+
+.recommend ul li p {
+    text-align: center;
+}
+
+/* 广告模块 */
+.advertisement {
+    margin: 7px 0px;
+    float: right;
+    width: 250px;
+    height: 75px;
+    background: url(../images/gg.png);
+}
+
+/* 今日推荐模块 */
+.today {
+    height: 163px;
+}
+
+.today_icon {
+    float: left;
+    width: 205px;
+    height: 163px;
+}
+
+.today_other ul li {
+    float: left;
+    width: 248.76px;
+    height: 163px;
+    background-color: #ebebeb;
+    padding-left: 20px;
+    border-right: 1px solid #dddddd;
+}
+
+/* 优质好货 */
+.price {
+    float: left;
+}
+
+.quality {
+    float: right;
+    padding-right: 35px;
+    padding-top: 25px;
+}
+
+.price h5 {
+    padding-top: 22px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.price p {
+    width: 87px;
+    height: 18px;
+    background-color: #00a0e8;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+}
+
+.price span {
+    display: block;
+    width: 70px;
+    height: 13px;
+    color: #717171;
+    font-size: 12px;
+}
+
+/* 品牌尾货 */
+.brand {
+    float: left;
+}
+
+.brand h5 {
+    padding-top: 22px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.brand p {
+    width: 87px;
+    height: 18px;
+    background-color: #5fb200;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+}
+
+.brand span {
+    display: block;
+    width: 70px;
+    height: 13px;
+    color: #717171;
+    font-size: 12px;
+}
+
+.brand h4 {
+    width: 58px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: #5fb200;
+    color: white;
+    margin-top: 22px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.brand_icon {
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+/* 时尚穿搭 */
+.fashion {
+    float: left;
+}
+
+.fashion h5 {
+    padding-top: 22px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fashion p {
+    width: 87px;
+    height: 18px;
+    background-color: #e2162f;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+}
+
+.fashion span {
+    display: block;
+    width: 70px;
+    height: 13px;
+    color: #717171;
+    font-size: 12px;
+}
+
+.fashion h4 {
+    width: 58px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: #e2162f;
+    color: white;
+    margin-top: 22px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.fashion_icon {
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+/* 0点上新 */
+.new0 {
+    float: left;
+}
+
+.new0 h5 {
+    padding-top: 22px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.new0 p {
+    width: 87px;
+    height: 18px;
+    background-color: #0085fb;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+}
+
+.new0 span {
+    display: block;
+    width: 70px;
+    height: 13px;
+    color: #717171;
+    font-size: 12px;
+}
+
+.new0 h4 {
+    width: 58px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: #0085fb;
+    color: white;
+    margin-top: 22px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.new0_icon {
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+/* 猜你喜欢模块 */
+.enjoy {
+    height: 262px;
+    margin-top: 30px;
+}
+
+.enjoy_top {
+    height: 30px; 
+}
+.enjoy_top h5 {
+    float: left;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: normal;
+}
+.enjoy_top_right {
+    float: right;
+}
+.enjoy_top_right a::after {
+    content: '\e6e1';
+    font-family: "iconfont";
+    margin-right: 20px;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+.enjoy_main{
+    height: 232px;
+}
+.enjoy_main ul a li {
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+.enjoy_main ul a li img {
+    width: 150px;
+    height: 135px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.enjoy_main ul a li h5 {
+    border-right: 1px solid #ededed;
+    font-size: 12px;
+    font-weight: normal;
+}
+.enjoy_main ul a li p {
+    color: #df3033;
+}

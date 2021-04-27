@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.switch 语句也是多分支语句 也可以实现多选1
+        // 2.语法结构 switch 转换 开关
+        // switch (表达式) {
+        //     case value1:
+        //         执行语句1;
+        //         break;
+
+        //         case value2:
+        //         执行语句1;
+        //         break;
+        //     default:
+        //         执行最后的语句
+        //         break;
+        // }
+        // 3、执行思路 利用我的表达式的值 和case后面的选项值相匹配，如果匹配上，就执行该case
+        // 里面的语句如果都没有匹配上，name执行default里面的语句
+        // 4、代码验证
+        switch (2) {
+            case 1:
+                console.log('这是1');
+                break;
+            case 2:
+                console.log('这是2');
+                break;
+            default:
+                console.log('没有匹配结果');
+                break;
+        }
+
+
+
+        var num = 3;
+        switch (num) {
+            case 1:
+                console.log(1);
+                break;
+            case 3:
+                console.log(3);
+                break
+            default:
+                console.log('无结果');
+                break;
+        }
+        // 我们开发里面 表达式我们经常写成变量
+        // 我们num的值 和case 里面的值相匹配的时候是 全等的关系
+// 固定值就是switch 范围值就用if else if
+        var sg = prompt('请输入您查询的水果');
+        switch (sg) {
+            case '苹果':
+                alert('3.5元一斤');
+                break;
+            case '香蕉':
+                alert('3.6元一斤');
+                break;
+            default:
+                alert('没有此水果');
+                break;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

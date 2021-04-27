@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getarrmax() { //arr 接受一个数组
+            var max = arguments[0];
+            for (var i = 1; i <= arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;  //return 后面的代码不会被执行 
+            // 返回的结果是最后一个值
+        }
+        console.log(getarrmax(1,2,3));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

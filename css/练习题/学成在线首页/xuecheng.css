@@ -1,0 +1,252 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.body {
+    background-color: #f3f5f7;
+}
+
+.all {
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+/* 头部部分 */
+.top {
+    height: 42px;
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+
+}
+
+.nav {
+    float: left;
+    width: 317px;
+    height: 42px;
+
+    margin-left: 40px;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    float: left;
+    line-height: 42px;
+    padding: 0px 20px;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+
+.serchbar {
+    float: left;
+    width: 412px;
+    height: 42px;
+
+}
+
+.serchbar input {
+    float: left;
+    border: 0.5px solid #00a4ff;
+    width: 360px;
+    height: 40px;
+}
+
+.serchbar button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    border: 0px solid;
+    background-image: url(picture/fa-search.png)
+}
+
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #7e7e7f;
+}
+
+/* banner部分 */
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.kme {
+    height: 420px;
+    background-image: url(picture/banner2.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.Ltab {
+    float: left;
+    width: 192px;
+    height: 420px;
+    background-color: #14024b;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.Ltab a {
+
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    font-size: 14px;
+    padding-left: 20px;
+    margin: 13px 0px;
+    color: white;
+}
+
+.Ltab a span {
+    float: right;
+    margin-right: 20px;
+}
+
+.Ltab a:hover {
+    color: #00b4ff;
+}
+
+.Rtab {
+    float: right;
+    width: 230px;
+    height: 420px;
+}
+
+.kec {
+    width: 230px;
+    height: 300px;
+    margin: 60px 0px;
+    background-color: #ffffff;
+}
+
+.kectop {
+    height: 48px;
+    background-color: #9bceea;
+    color: #ffffff;
+    line-height: 48px;
+    text-align: center;
+}
+
+.kclist {
+    padding: 0px 20px;
+
+}
+
+.kclist ul li {
+    padding: 10px 0px;
+    border-bottom: 2px solid #cccccc;
+}
+
+.kclist ul li h4 {
+    font-size: 17px;
+    color: #5a5a5a;
+}
+
+.kclist ul li p {
+    font-size: 15px;
+    color: #bdbdbd;
+}
+
+.more {
+    display: block;
+    height: 41px;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+    line-height: 41px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.xzl {
+    height: 62px;
+    background-color: #ffffff;
+    margin-top: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+.xzllist {
+    padding-top: 20px;
+    float: left;
+}
+
+.xzllist ul li {
+    display: inline-block;
+    width: 132px;
+    height: 20px;
+    text-align: center;
+    border-right: 1px solid #bfbfbf;
+}
+
+/* last-child 选择最后一个小li改变样式 */
+.xzllist ul li:last-child {
+    border-right: none;
+}
+
+.xzllist ul li a {
+    color: #050505;
+}
+
+.xzllist ul li a:hover {
+    color: #00a4ff;
+}
+
+.interest {
+    float: right;
+    line-height: 62px;
+    margin-right: 28px;
+}
+
+.interest a {
+    color: #00a4f0;
+}
+
+.jptj {
+    height: 600px;
+    background-color: skyblue;
+    margin-top: 35px;
+}
+
+.jptjtop {
+    height: 38px;
+    background-color: slateblue;
+}
+
+.jptjtopbt {
+    float: left;
+    font-size: 20px;
+}
+
+.jptjtoplj {
+    float: right;
+}
+
+.jptjtoplj a {
+    font-size: 13px;
+    color: #b1b1b1;
+    margin-right: 30px;
+}

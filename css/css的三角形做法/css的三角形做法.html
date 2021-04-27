@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box3 {
+            /* 给一个盒子不设置宽高，直接设置边框就会变成三角形，常用于隐藏展示 */
+            width: 0px;
+            height: 0px;
+            border-top: 10px solid skyblue;
+            border-bottom: 10px solid pink;
+            border-right: 10px solid brown;
+            border-left: 10px solid yellow;
+        }
+
+        .box1 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            /* transparent透明显示 */
+            border: 10px solid transparent;
+            border-bottom-color: blue;
+            right: 15px;
+            top: -20px;
+        }
+
+        .box2 {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box3"></div>
+    <div class="box2">
+        <div class="box1"></div>
+    </div>
+</body>
+
+</html>
